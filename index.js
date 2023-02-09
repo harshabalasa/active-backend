@@ -11,6 +11,8 @@ const officerApi = require('./routes/officer.js')
 const cadreApi = require('./routes/cadre.js')
 const taskApi = require('./routes/task.js')
 
+const message = require('./services/message.js')
+
 app.use(express.json())
 app.use(cors())
 
@@ -27,6 +29,7 @@ app.listen(PORT, ()=> {
     console.log(`Server running at port ${PORT}`)
 })
 
+message()
 app.use('/api/users', userApi)
 app.use('/api/commissions', commissionApi)
 app.use('/api/login', loginApi)
