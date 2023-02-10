@@ -1,6 +1,6 @@
 const cron = require("node-cron")
 const twilio = require("twilio")
-const message = () => cron.schedule("0 8 * * *", () => { //10seconds
+const message = () => cron.schedule("0 8 * * *", () => { //8AM everyday
 	sendMessage()
 })
 
