@@ -6,7 +6,7 @@ const message = () => cron.schedule("0 */12 * * *", () => { //8AM everyday
 
 const sendMessage = () => {
     const accountSid = "AC8ed0c755bfa950a48b9f6cd44fcacead";
-    const authToken = "6ed7c1ee99633701846b6878d1bd57b1";
+    const authToken = "cb4a59f6b54304d868980f6f99c4584b";
     const client = twilio(accountSid, authToken);
 
     client.messages
